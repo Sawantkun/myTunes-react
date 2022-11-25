@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    scroll-behavior: smooth;
+
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+#overview{
+    background-image: url("./components/assets/Images/showcase.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#world{
+    background-image: url("./components/assets/Images/section-bg.jpeg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.open{
+    display: block !important;
+}
+
+/* media queries  */
+@media only screen and (max-width: 830px) {
+    #overview{
+        padding: 90px 20px;
+        height: 100vh;
+        justify-content: center;
+    }
+    #overview h1{
+        font-size: 2.5rem;
+    }
+    #overview h2{
+        font-size: 1.3rem;
+        padding-top: 30px;
+    }
+    #overview p{
+        padding-top: 30px;
+        font-size: 1rem;
+        line-height: 30px;
+    }
+    #music{
+        padding: 100px 20px;
+        height: 100%;
+    }
+    #music h1{
+        font-size: 2.5rem;
+    }
+    #music h2{
+        font-size: 1.3rem;
+        padding-top: 20px;
+    }
+    #music p{
+        font-size: 1rem;
+        padding-top: 20px;
+    }
+    #music img{
+        padding-top: 20px;
+    }
+    #video{
+        padding: 100px 20px;
+        height: 100%;
+    }
+    #video h2{
+        font-size: 1.3rem;
+        padding-top: 20px;
+    }
+    #video p{
+        padding-top: 20px ;
+    }
+    #button{
+        margin: 20px 0;
+    }
+    #world{
+        padding: 0 20px;
+    }
+    #world h2{
+        font-size: 1.3rem;
+    }
+    #world p{
+        font-size: 1rem;
+    }
+    #gift-cards{
+        height: 100%;
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+    #gift-cards div{
+        width: 100%;
+    }
+    #gift-cards img{
+        width: 100%;
+    }
+    #gift-cards h2{
+        font-size: 1.5rem;
+    }
+    #gift-cards p{
+        line-height: 22px;
+        padding-top: 5px;
+    }
+    #gift-cards #hr{
+        display: none;
+    }
+    #gift-cards a{
+        padding-top: 10px;
+    }
+    #footer div:first-of-type{
+        display: none;
+    }
+    #navbar p{
+        display: block;
+    }
+    #navbar img{
+        display: block;
+    }
+    #navbar ul{
+        display:none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding:60px 40px 20px 40px ;
+        background-color: #333333;
+    }
+}
